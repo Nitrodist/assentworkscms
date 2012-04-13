@@ -46,3 +46,13 @@ body {
   background: #CCC;
 }
 
+footer {
+  margin: 0 auto;
+  width: 500px;
+}
+footer img {
+  border: 1px solid black;
+  vertical-align: middle;
+  box-shadow: 5px 5px 3px #888;
+
+}
