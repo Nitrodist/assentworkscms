@@ -11,12 +11,24 @@
  *= require_self
  *= require_tree .
 */
+
+header,section,article,aside,footer{
+  display: block;
+}
+
 body {
-  background: #DDD;
+  background: #EEE;
   font-family: Verdana;
   font-size: 13px;
   line-height: 18px;
 }
+
+#page_container {
+  width: 800px;
+  margin: 0 auto;
+}
+
+
 
 #body_content, #side_body_content {
   float: left;
@@ -26,9 +38,61 @@ body {
   padding: 20px;
 }
 
+#bg-cog {
+  padding: 20px;
+  width: 400px;
+  position: absolute;
+  margin: 0 auto;
+  top: -71px;
+  left: 50%;
+  margin-left: -561px;
+  z-index: -1;
+}
+
+#logo-container {
+  width: 300px;
+  position: relative;
+  left: 400px;
+  background-image: url("/assets/images/banner.png");
+  background-repeat: no-repeat;
+}
+
+#header h1 {
+  color: white;
+  text-shadow: 0px 1px 2px #000;
+  font-size: 4em;
+}
+
+#header h2 {
+  color: white;
+  text-shadow: 0px 1px 2px #000;
+}
+
+#header h1 a {
+  color: #FFF;
+  text-decoration: none;
+}
+#header h1 a:hover {
+  text-decoration: underline;
+}
+
+#menu {
+  margin: 0 auto;
+  background-color:#0065FF; 
+}
+
 #menu ul {
   list-style: none;
-  padding: 0px;
+  margin: 0 auto 0;
+  display: block;
+  width: 764px;
+  height:43px;
+  line-height: 43px;
+  position:relative;
+}
+
+#page {
+  margin: 0 auto;
 }
 
 
@@ -36,14 +100,17 @@ body {
   float: left;
   margin-right: 10px;
 }
+
 #menu ul > li a {
   display: block;
-  padding: 5px 10px;
+  padding: 0px 10px;
   text-decoration: none;
+  color: #FFF;
 }
 
-#menu ul > li a:hover {
-  background: #CCC;
+#menu ul > li a:hover, #menu ul > li.selected {
+  background: #000;
+  color: #FFF;
 }
 
 footer {
